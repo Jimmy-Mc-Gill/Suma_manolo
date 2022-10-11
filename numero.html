@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <script>
+        function saluda(){
+            var Numero1 = document.getElementById("Num1").value;
+            var Numero2 = document.getElementById("Num2").value;
+
+            var resultado = parseInt(numero1) + parseInt(numero2);
+            
+            document.getElementById("mensaje").innerHTML = "El resultado es: " + resultado;
+
+        }
+    </script>
+    <form>
+        Número 1: <input id="Num1" type="text" /> </br>
+        Número 2: <input id="Num2" type="text" /> </br>
+        <input type="button" value="Enviar" onclick="saluda()"/>
+    </form>
+
+    <div id="mensaje">
+
+    </div>
+
+
+</body>
+</html>
